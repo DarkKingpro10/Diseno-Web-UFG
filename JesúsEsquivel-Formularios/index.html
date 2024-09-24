@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <section>
+        <h1>Formulario de registro</h1>
+        <form>
+            <!--Apartado de información personal-->
+            <fieldset class="personalInfo-form">
+                <legend>Información personal</legend>
+                <label for="nombre-input">Nombre:</label>
+                <input required minlength="1" maxlength="65" type="text" name="nombre" id="nombre-input">
+                <label for="appellido-input">Apellido: </label>
+                <input type="text" name="apellido" id="appellido-input" required maxlength="64" minlength="1">
+                <div>
+                    <label for="sexo">Sexo:</label>
+                    <input type="radio" name="sexo" id="hombre-radio">
+                    <label for="hombre">Hombre</label>
+                    <input type="radio" name="sexo" id="mujer-radio">
+                    <label for="mujer-radio">Lavatraste</label>
+                </div>
+            </fieldset>
+            <!--Apartado de contacto-->
+            <fieldset>
+                <legend>Datos de contacto</legend>
+                <label for="correo-input">Correo electronico:</label>
+                <input type="email" name="correo" id="correo-input">
+                <label for="telefono-input">Teléfono:</label>
+                <input type="text" name="numero" id="telefono-input">
+            </fieldset>
+            <!--Apartado de elección del plan-->
+            <fieldset>
+                <legend>Elección del plan</legend>
+                <label for="plan">Secciona un plan:</label>
+                <div>
+                    <input type="radio" name="plan" id="basicoPlan-radio">
+                    <label for="" basicoPlan-radio>Básico</label>
+
+                    <input type="radio" name="plan" id="premiumPlan-radio">
+                    <label for="premiumPlan-radio">Premium</label>
+
+                    <input type="radio" name="plan" id="entreprisePlan-radio">
+                    <label for="entreprisePlan-radio">Enterprise</label>
+                </div>
+            </fieldset>
+            <div class="submit-section">
+                <button>Registrarse</button>
+            </div>
+        </form>
+    </section>
+</body>
+
+</html>

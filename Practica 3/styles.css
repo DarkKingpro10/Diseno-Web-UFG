@@ -1,0 +1,34 @@
+table {
+    margin: auto;
+    border-collapse: separate;
+    border: 1px solid gray;
+
+    thead tr td {
+        font-weight: bold;
+    }
+
+    td {
+        border: 1px solid black;
+    }
+}
+
+.total-row td:first-child,
+.total-row td:last-child {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+}
+
+.rest-row td:last-child{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.class-table td{
+    padding: 5px;
+}
+
+.class-table caption{
+    border-collapse: separate;
+    border: 1px solid black;
+}

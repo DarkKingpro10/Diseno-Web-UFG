@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio Tablas - Jesús Esquivel</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <main>
+        <h1>Trabajo de Jesús Esquivel - ER100523</h1>
+        <section class="table-container">
+            <table>
+                <caption>Tabla con combinación de filas y columnas</caption>
+                <thead>
+                    <tr>
+                        <td>celda 1</td>
+                        <td>celda 2</td>
+                        <td>celda 3</td>
+                        <td>celda 4</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="3">celda 5</td>
+                        <td>celda 6</td>
+                        <td colspan="2">celda 7</td>
+                    </tr>
+                    <tr>
+                        <td>celda 8</td>
+                        <td>celda 9</td>
+                        <td rowspan="2">celda 10</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">celda 11</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <hr>
+        <section>
+            <table>
+                <caption>Tabla 2</caption>
+                <thead>
+                    <tr>
+                        <td>Nombre producto</td>
+                        <td>Precio unitario</td>
+                        <td>Unidades</td>
+                        <td>Subtotal</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Reproductor MP3 (80 GB)</td>
+                        <td>192.02</td>
+                        <td>1</td>
+                        <td>192.02</td>
+                    </tr>
+                    <tr>
+                        <td>Fundas de colores</td>
+                        <td>2.50</td>
+                        <td>6</td>
+                        <td>12.50</td>
+                    </tr>
+                    <tr>
+                        <td>Reproductor de radio & control remoto</td>
+                        <td>12.99</td>
+                        <td>1</td>
+                        <td>12.99</td>
+                    </tr>
+                    <tr class="total-row">
+                        <td>Total</td>
+                        <td>-</td>
+                        <td>7</td>
+                        <td>207.51</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <hr>
+        <section>
+            <table class="class-table">
+                <caption>Mi Horario de Clases</caption>
+                <tr>
+                    <td>Horario</td>
+                    <td>Lunes</td>
+                    <td>Martes</td>
+                    <td>Miercoles</td>
+                    <td>Jueves</td>
+                    <td>Viernes</td>
+                </tr>
+                <tr>
+                    <td>7 - 9 am</td>
+                    <td>Física</td>
+                    <td>Geografia</td>
+                    <td>Historia</td>
+                    <td>Cálculo</td>
+                    <td>Cívica</td>
+                </tr>
+                <tr>
+                    <td>9 - 11 am</td>
+                    <td>Comunicación</td>
+                    <td>Biologia</td>
+                    <td>Matematica</td>
+                    <td>Física</td>
+                    <td>Química</td>
+                </tr>
+                <tr class="rest-row">
+                    <td>11 - 1 am</td>
+                    <td colspan="5">Descanso</td>
+                </tr>
+                <tr>
+                    <td>3 - 5 pm</td>
+                    <td>Historia</td>
+                    <td>Arte</td>
+                    <td>Música</td>
+                    <td>Tecnología</td>
+                    <td>Física</td>
+                </tr>
+                <tr>
+                    <td>5 - 7 pm</td>
+                    <td>Inglés</td>
+                    <td>Economia</td>
+                    <td>Química</td>
+                    <td>Redacción</td>
+                    <td>Musica</td>
+                </tr>
+                <tr>
+                    <td colspan="7">Horario de verano</td>
+                </tr>
+            </table>
+        </section>
+    </main>
+</body>
+</html>

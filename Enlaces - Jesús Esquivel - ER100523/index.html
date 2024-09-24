@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica con enlaces</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <section id="enlaceI-2">
+            <h1>Video</h1>
+            <video controls autoplay loop muted>
+                <source src="./resources/video.mp4" type="video/mp4">
+                <source src="./resources/video-webm.webm" type="video/webm">
+                El navegador no soporta el tipo de video
+            </video>
+            <a href="#enlaceI-1">Dale click para volver a bajar</a>
+        </section>
+        <section id="enlaceI-3">
+            <h1>Audio</h1>
+            <audio controls>
+                <source src="./resources/capullo-y-sorullo.mp3" type="audio/mp3">
+                <source src="./resources/capullo-y-sorullo-wav.wav" type="audio/wav">
+            </audio>
+            <a href="#enlaceI-1">Dale click para volver a bajar</a>
+        </section>
+        <section>
+            <h1>Enlaces</h1>
+            <a href="https://www.youtube.com/watch?v=BokdSWC2R68">Enlace externo</a>
+            <a href="#enlaceI-1">Enlace interno</a>
+        </section>
+        <section class="enlaceI-container">
+            <h1 id="enlaceI-1">Bien aquí esta el enlace interno</h1>
+            <a href="#enlaceI-2">
+                Dale click a la imagen para subir al inicio de la página
+                <img src="https://cdn.icon-icons.com/icons2/2596/PNG/512/to_top_icon_154709.png" alt="Icono de top">
+            </a>
+        </section>
+    </main>
+</body>
+</html>

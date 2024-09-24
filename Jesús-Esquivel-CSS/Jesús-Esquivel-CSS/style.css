@@ -1,0 +1,70 @@
+*, ::after, ::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    color:white;
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+    color: white;
+    font-size: 5rem;
+}
+
+h3{
+    text-align: center;
+    color: rgb(196, 196, 196);
+    font-size: 3.5rem;
+}
+
+p{
+    text-align: center;
+    color: rgb(150, 150, 147);
+    font-size: 1.1rem;
+}
+
+.lista--ordenada{
+    list-style-position: inside;
+}
+
+.lista--desordenada{
+    list-style-position: inside;
+}
+
+.imagenes__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#imagen{
+    border: 4px solid white;
+    background-color: antiquewhite;
+    border-radius: 50px;
+}
+
+.imagen2{
+    margin-top: 5px;
+    border: 4px solid blueviolet;
+    border-left-style: dashed;
+    border-top-style: dotted;
+    border-right-style: double;
+    border-bottom-style: groove;
+    width: 11rem;
+    height: 10rem;
+}
+
+.imagen3{
+    background-color: rgba(245, 245, 245, 0.404);
+    padding: 25px;
+    width: 600px;
+    height: 600px;
+    border: 5px solid whitesmoke;
+    margin-bottom: 10px;
+}
