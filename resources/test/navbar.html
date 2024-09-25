@@ -14,11 +14,18 @@
   <header class="border-bottom-sutil">
     <div class="nav-container">
       <div class="poppins-bold nav-logo">
-        <img src="https://observatoriocovid19.sv/img/ufg.png" alt="Logo de la Universidad Francisco Gavidia"
-          height="60px">
-        <a href="./index.html">Principal</a>
+        <a href="${BASEURL}"> <img src="https://observatoriocovid19.sv/img/ufg.png"
+            alt="Logo de la Universidad Francisco Gavidia" height="60px"><span>Principal<span></a>
       </div>
-      <nav class="navbar">
+      <nav class="navbar navbar--open">
+        <div class="nav__menu__container">
+          <p>Menú</p>
+          <div class="nav__burger__menu navbar__burger__menu--open" title="Abrir/Cerrar Menú">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
         <ul class="navbar-list">
           <li>
             <a class="navbar-list-item" href="./index.html">Inicio</a>
@@ -60,14 +67,14 @@
           </li>
         </ul>
       </nav>
-
+      <div class="overlay"></div>
       <div class="switcher__container">
         <input title="Cambiar a dark mode" type="checkbox" id="trigger__theme" chan>
         <div class="theme__option"></div>
       </div>
 
       <div class="nav__menu__container" title="Abrir/Cerrar Menú">
-        <div class="nav__burger__menu ">
+        <div class="nav__burger__menu">
           <div></div>
           <div></div>
           <div></div>

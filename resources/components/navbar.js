@@ -37,15 +37,23 @@ function generateHeader(links) {
     <header class="border-bottom-sutil">
       <div class="nav-container">
         <div class="poppins-bold nav-logo">
-          <img src="https://observatoriocovid19.sv/img/ufg.png" alt="Logo de la Universidad Francisco Gavidia"
-            height="60px">
-          <a href="${BASEURL}">Principal</a>
+          <a href="${BASEURL}"> <img src="https://observatoriocovid19.sv/img/ufg.png" alt="Logo de la Universidad Francisco Gavidia"
+            height="60px"><span>Principal<span></a>
+        </div>
+        <div class="nav__menu__container">
+          <p>Menú</p>
+          <div class="nav__burger__menu navbar__burger__menu--open" title="Abrir/Cerrar Menú">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
         </div>
         <nav class="navbar">
           <ul class="navbar-list">
             ${links}
           </ul>
         </nav>
+        <div class="overlay"></div>
         <div class="switcher__container">
           <input title="Cambiar a dark mode" type="checkbox" id="trigger__theme">
           <div class="theme__option"></div>
