@@ -62,6 +62,7 @@ function checkTheme() {
     ('trigger__theme');
 
   root.setAttribute('data-theme', newTheme);
+
   if (root.getAttribute('data-theme') === 'dark') {
     switcherTheme.checked = true;
   }
@@ -69,6 +70,7 @@ function checkTheme() {
   switcherTheme.addEventListener('change', function () {
     const setTheme = this.checked ? 'dark' : 'light';
     root.setAttribute('data-theme', setTheme);
+    // localStorage.setItem('theme', setTheme);
   })
 }
 
