@@ -34,21 +34,21 @@ function getListItem(linkArray, isExpandedItem = false) {
 
 function generateHeader(links) {
   let header = `
-    <header class="border-bottom-sutil">
+    <header class="border-bottom-sutil header-principal">
       <div class="nav-container">
         <div class="poppins-bold nav-logo">
           <a href="${BASEURL}"> <img src="https://observatoriocovid19.sv/img/ufg.png" alt="Logo de la Universidad Francisco Gavidia"
             height="60px"><span>Principal<span></a>
         </div>
-        <div class="nav__menu__container">
-          <p>Menú</p>
-          <div class="nav__burger__menu navbar__burger__menu--open" title="Abrir/Cerrar Menú">
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-        </div>
         <nav class="navbar">
+          <div class="nav__menu__container">
+            <p>Menú</p>
+            <div class="nav__burger__menu navbar__burger__menu--open" title="Abrir/Cerrar Menú">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
           <ul class="navbar-list">
             ${links}
           </ul>
@@ -57,6 +57,13 @@ function generateHeader(links) {
         <div class="switcher__container">
           <input title="Cambiar a dark mode" type="checkbox" id="trigger__theme">
           <div class="theme__option"></div>
+        </div>
+        <div class="nav__menu__container" title="Abrir/Cerrar Menú">
+          <div class="nav__burger__menu">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
         </div>
       </div>
     </header>

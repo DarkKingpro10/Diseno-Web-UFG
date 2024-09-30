@@ -32,20 +32,8 @@ export const LINKS = [
       {
         "title": "Actividad 1",
         "URL": BASEURL + "/periodo1/actividad1.html",
-        "isExpandContainer": true,
-        "iconExpanded": "chevron_right",
-        "children": [
-          {
-            "title": "Enlaces",
-            "URL": BASEURL + "/periodo1/enlaces.html",
-            "isExpandContainer": false,
-          },
-          {
-            "title": "Formularios",
-            "URL": BASEURL + "/periodo1/formularios.html",
-            "isExpandContainer": false
-          }
-        ]
+        "isExpandContainer": false,
+        "iconCollapsed": "chevron_right",
       },
       {
         "title": "Actividad 2",
@@ -76,6 +64,10 @@ export const LINKS = [
       {
         "title": "Validación Formularios",
         "URL": BASEURL + "/periodo2/formularios2.html",
+        "isExpandContainer": false
+      },{
+        "title": "Practica CSS",
+        "URL": BASEURL + "/periodo2/practicacss.html",
         "isExpandContainer": false
       }
     ]

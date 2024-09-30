@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', async function () {
   await loadLinks();
   await loadScripts();
   checkTheme();
+  toggleMenu();
 });
 
 function loadScripts() {
@@ -69,4 +70,15 @@ function checkTheme() {
     const setTheme = this.checked ? 'dark' : 'light';
     root.setAttribute('data-theme', setTheme);
   })
+}
+
+function toggleMenu() {
+  const nav = document.querySelector('.navbar');
+  const buttons = document.getElementsByClassName('nav__burger__menu');
+
+  for (const button of buttons) {
+    button.addEventListener('click', function () {
+      nav.classList.toggle('navbar--open');
+    })
+  }
 }

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validación Formulario</title>
+    <link rel="stylesheet" href="formularios2.css">
+    <script type="module" src="../resources/js/general.js"></script>
+</head>
+
+<body>
+    <main>
+        <section class="form-container">
+            <h1 class="form-header border-bottom">Registro básico</h1>
+            <form action="" class="form">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" required>
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" required>
+
+                <label for="password">Contraseña (mínimo 6 caracteres):</label>
+                <input type="password" minlength="6" id="password">
+
+                <button>Registrar</button>
+            </form>
+        </section>
+
+        <section class="form-container">
+            <h1 class="form-header border-bottom">Formulario de Contacto</h1>
+            <form action="" class="form">
+                <label for="nombreC">Nombre:</label>
+                <input type="text" id="nombreC" required>
+
+                <label for="emailC">Correo Electrónico:</label>
+                <input type="email" id="emailC" required>
+
+                <label for="telefonoC">Número de Teléfono:</label>
+                <input type="number" id="telefonoC">
+
+                <label for="mensajeC">Mensaje (10-300 caracteres):</label>
+                <textarea class="textarea-mensaje" name="mensajeC" id="mensajeC" minlength="10"
+                    maxlength="300"></textarea>
+                <button>Registrar</button>
+            </form>
+        </section>
+
+        <section class="form-container">
+            <h1 class="form-header border-bottom">Formulario de Reserva de Hotel</h1>
+            <form action="" class="form">
+                <label for="nombreH">Nombre:</label>
+                <input type="text" id="nombreH" required>
+
+                <label for="numerPersonas">Número de Personas</label>
+                <input type="number" id="numerPersonas" required>
+
+                <label for="fechaEntrada">Fecha de Entrada</label>
+                <input type="date" name="fechaEntrada" id="fechaEntrada">
+
+                <label for="fechaSalida">Fecha de Salida</label>
+                <input type="date" name="fechaSalida" id="fechaSalida">
+                <button>Registrar</button>
+            </form>
+        </section>
+
+        <section class="form-container">
+            <h1 class="form-header border-bottom">Encuesta</h1>
+            <form >
+
+                <p class="formPS_labels">Cual es tu lenguaje de programacion favorito?</p>
+
+
+
+                <input type="radio" id="lang-java" name="favorite-language" value="java" required />
+
+                <label for="lang-java">Java</label>
+
+
+
+                <input type="radio" id="lang-python" name="favorite-language" value="python" />
+
+                <label for="lang-python">Python</label>
+
+
+
+                <input type="radio" id="lang-javascript" name="favorite-language" value="javascript" />
+
+                <label for="lang-javascript">JavaScript</label>
+
+
+
+                <input type="radio" id="lang-other" name="favorite-language" value="other" />
+
+                <label for="lang-other">Otro (especifica)</label>
+
+                <input type="text" id="lang-other-text" name="lang-other-text" />
+
+
+
+                <p class="formPS_labels">
+
+                    Cada cuanto ocupas recuros online para aprender?
+
+                </p>
+
+
+
+                <input type="radio" id="freq-daily" name="online-resources" value="daily" required />
+
+                <label for="freq-daily">Diariamente</label>
+
+
+
+                <input type="radio" id="freq-weekly" name="online-resources" value="weekly" />
+
+                <label for="freq-weekly">Semanalmente</label>
+
+
+
+                <input type="radio" id="freq-monthly" name="online-resources" value="monthly" />
+
+                <label for="freq-monthly">Mensualmente</label>
+
+
+
+                <input type="radio" id="freq-rarely" name="online-resources" value="rarely" />
+
+                <label for="freq-rarely">Casi nunca</label>
+
+
+
+                <p class="formPS_labels">
+
+                    Cual crees que es el mayor reto a la hora de aprender a programar?
+
+                </p>
+
+                <textarea id="challenge" name="challenge" required></textarea>
+
+
+
+                <p class="formPS_labels">
+
+                    Cual consideras que es actualmente tu nivel en programacion?
+
+                </p>
+
+
+
+                <input type="radio" id="exp-beginner" name="experience" value="beginner" required />
+
+                <label for="exp-beginner">Junior</label>
+
+
+
+                <input type="radio" id="exp-intermediate" name="experience" value="intermediate" />
+
+                <label for="exp-intermediate">Intermediate</label>
+
+
+
+                <input type="radio" id="exp-advanced" name="experience" value="advanced" />
+
+                <label for="exp-advanced">senior</label>
+
+
+
+                <p class="formPS_labels">
+
+                    Que prefieres a la hora de aprender nuevos conceptos de programacion
+
+                </p>
+
+
+
+                <input type="radio" id="learn-online" name="learning-preference" value="online" required />
+
+                <label for="learn-online">cursos onlien y videos</label>
+
+
+
+                <input type="radio" id="learn-books" name="learning-preference" value="books" />
+
+                <label for="learn-books">libros</label>
+
+
+
+                <input type="radio" id="learn-practice" name="learning-preference" value="practice" />
+
+                <label for="learn-practice">proyectos y practicas continuas</label>
+
+
+
+                <div>
+
+                    <button type="submit" class="formPS_RegistrarPS">Enviar</button>
+
+                </div>
+
+            </form>
+        </section>
+
+    </main>
+    <script src="formularios2.js"></script>
+</body>
+
+</html>
