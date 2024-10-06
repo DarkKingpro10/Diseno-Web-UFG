@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    flex-direction: column;
+}
+
+h3{
+    text-align: center;
+}
+
+.caja{
+    background-color: black;
+    width: 300px;
+    height: 300px;
+    overflow: auto;
+}
+
+.caja__sombra{
+    box-shadow: 0 0 25px;
+}
+
+.br{
+    border-radius: 10px;
+}
+
+.gradiente{
+    background: linear-gradient(180deg,green, black);
+}
+
+.mt{
+    margin: 50px;
+}
+
+.p{
+    padding: 50px;
+}
+
+.b{
+    border: 5px solid;
+}
+
+.box-sizing{
+    box-sizing: content-box;
+}
+
+.galeria{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}

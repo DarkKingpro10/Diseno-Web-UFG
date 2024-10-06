@@ -15,7 +15,7 @@ export const LINKS_EXTERNAL = [
   },
   {
     "rel": "stylesheet",
-    "URL": BASEURL+"/style.css"
+    "URL": BASEURL + "/style.css"
   }
 ]
 
@@ -65,9 +65,25 @@ export const LINKS = [
         "title": "Validación Formularios",
         "URL": BASEURL + "/periodo2/formularios2.html",
         "isExpandContainer": false
-      },{
+      }, {
         "title": "Practica CSS",
         "URL": BASEURL + "/periodo2/practicacss.html",
+        "isExpandContainer": false
+      }
+    ]
+  }, 
+  {
+    "title": "Periodo 3",
+    "isExpandContainer": true,
+    "children": [
+      {
+        "title": "Practica 1",
+        "URL": BASEURL + "/periodo3/practica1.html",
+        "isExpandContainer": false
+      },
+      {
+        "title": "Actividad 2",
+        "URL": BASEURL + "/periodo3/actividad2.html",
         "isExpandContainer": false
       }
     ]
